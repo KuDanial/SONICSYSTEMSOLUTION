@@ -6,8 +6,8 @@ DESIGNED & DEVELOPED by TENGKU AHMAD DANIAL
 Website: http://linkedin.com/in/tengkuahmaddanial
 Twitter: http://twitter.com/
 Github: https://github.com/KuDanial
-~~~<a>❝ __my discord__ ❞</a>~~~
-[~~~img280(https://discord.c99.nl/widget/theme-2/250529251613212672.png)~~~ ](https://discordid.netlify.app/?id=250529251613212672)
+❝ __my discord__ ❞
+img280(https://discord.c99.nl/widget/theme-2/250529251613212672.png)(https://discordid.netlify.app/?id=250529251613212672)
 
 # CREDITS:
 
