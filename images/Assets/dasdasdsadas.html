@@ -1,0 +1,376 @@
+<html><head><base href="https://sonic-system-solution.com/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONIC SYSTEM SOLUTION - Surveillance Systems</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .header {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo {
+            max-width: 200px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+            position: relative;
+        }
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #27AA9C;
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #27AA9C;
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.3s ease-in-out;
+        }
+        .nav-link:hover::after {
+            visibility: visible;
+            transform: scaleX(1);
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .login-btn {
+            background-color: #27AA9C;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .login-btn:hover {
+            background-color: #228e82;
+        }
+        .hero {
+            background-color: #27AA9C;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: white;
+            color: #27AA9C;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #f0f0f0;
+        }
+        .section {
+            padding: 60px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section h2 {
+            color: #27AA9C;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .product {
+            width: 30%;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .video-gallery-container {
+            overflow-x: auto;
+            padding-bottom: 20px;
+        }
+        .video-gallery {
+            display: flex;
+            gap: 20px;
+            padding-bottom: 10px;
+        }
+        .video {
+            flex: 0 0 300px;
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        .video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .view-more-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .view-more {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #27AA9C;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .view-more:hover {
+            background-color: #228e82;
+        }
+        .partners {
+            text-align: center;
+        }
+        .partner-logos {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .partner-logos img {
+            max-width: 150px;
+            margin: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+        .footer-section {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .footer-section h3 {
+            color: #27AA9C;
+        }
+        .social-links a {
+            color: white;
+            font-size: 24px;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #555;
+            margin-top: 20px;
+        }
+        .rating {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .stars {
+            color: #FFD700;
+            font-size: 24px;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img src="/a/46387363-bd4d-4fc0-a739-99edcfd7b6b0" alt="Sonic System Solution Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#videos" class="nav-link">Videos</a></li>
+                    <li><a href="#partners" class="nav-link">Partners</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Contact</a>
+                        <div class="dropdown-content">
+                            <a href="/find-us">Find Us</a>
+                            <a href="/join-us">Join Us</a>
+                        </div>
+                    </li>
+                    <li><a href="/login" class="login-btn">LOGIN</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>SONIC SYSTEM SOLUTION</h1>
+            <p>Cutting-edge surveillance systems for your security needs</p>
+            <a href="#products" class="cta-button">Explore Our Products</a>
+        </section>
+
+        <section id="products" class="section">
+            <h2>Our Products</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="product1.jpg" alt="CCTV Camera">
+                    <h3>HD CCTV Camera</h3>
+                    <p>High-definition surveillance for crystal clear footage</p>
+                </div>
+                <div class="product">
+                    <img src="product2.jpg" alt="Alarm System">
+                    <h3>Smart Alarm System</h3>
+                    <p>Intelligent security with mobile app integration</p>
+                </div>
+                <div class="product">
+                    <img src="product3.jpg" alt="Access Control">
+                    <h3>Biometric Access Control</h3>
+                    <p>Secure entry management with fingerprint recognition</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="videos" class="section">
+            <h2>Product Showcases</h2>
+            <div class="video-gallery-container">
+                <div class="video-gallery">
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_4" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_5" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more-container">
+                <a href="/videos" class="view-more">View More</a>
+            </div>
+        </section>
+
+        <section id="partners" class="section partners">
+            <h2>Partners & Brands</h2>
+            <div class="partner-logos">
+                <img src="partner1.png" alt="Partner 1">
+                <img src="partner2.png" alt="Partner 2">
+                <img src="partner3.png" alt="Partner 3">
+                <img src="partner4.png" alt="Partner 4">
+            </div>
+            <a href="#" class="view-more">View More</a>
+        </section>
+
+        <div class="rating">
+            <h3>Overall Rating</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>4.5 out of 5 stars</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>SONIC SYSTEM SOLUTION provides cutting-edge surveillance and security systems to protect homes and businesses.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: info@sonicsystemsolution.com</p>
+                <p>Phone: +60 16-264-6363</p>
+                <p>Address: 395-B Depan Masjad Muhammadi, Jalan Pengkalan Chepa, 15400 Kota Bharu, Kelantan, Malaysia</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.youtube.com/sonicsystemsolution" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/sonicsystemsolution" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/sonicsystemsolution" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 SONIC SYSTEM SOLUTION. All rights reserved.</p>
+        </div>
+    </footer>
+</body></html>
