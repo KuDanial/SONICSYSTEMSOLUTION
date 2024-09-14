@@ -4,10 +4,11 @@
 DESIGNED & DEVELOPED by TENGKU AHMAD DANIAL
 
 Website: http://linkedin.com/in/tengkuahmaddanial
+
 Twitter: http://twitter.com/
+
 Github: https://github.com/KuDanial
-❝ __my discord__ ❞
-https://discord.c99.nl/widget/theme-2/250529251613212672.png
+
 
 # CREDITS:
 
