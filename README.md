@@ -1,4 +1,8 @@
 ﻿# SONICSYSTEMSOLUTION
+The project has moved to a new, more powerful platform to bring you a better experience. Please do visit the website i built here [ sonicsystemsolution.com ](https://sonicsystemsolution.com/)
+
+<img width="1915" height="1031" alt="image" src="https://github.com/user-attachments/assets/5541340d-0ae2-469f-a6ea-b993573c320b" />
+
 
 # AUTHOR:
 DESIGNED & DEVELOPED by TENGKU AHMAD DANIAL
@@ -48,3 +52,4 @@ http://dimsemenov.com/plugins/magnific-popup/
 Demo Images:
 http://unsplash.com
 http://pixeden.com
+
